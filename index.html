@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <img src="/images/gental.png" alt=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./eat. sleep. code..png">
+    <title>METEOR-BLAST</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            overflow: hidden;
+        }
+        .score{
+            color: white;
+            position: fixed;
+            font-size: 30px;
+            padding: 20px;
+        }
+        .cover{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .menu{ 
+            background: white;
+            width: fit-content;
+            padding: 30px;
+            height: fit-content;
+            border-radius: 20px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .start{
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 20px;
+            width: 10vw;
+            border-radius: 20px;
+            background-color: rgb(115, 115, 220);
+            color: white;
+            border: none;
+        }
+        .version{
+            color: rgba(0, 0, 0, 0.68);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.527);
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body> 
+    <div class="score"><span>SCORE:</span><span class="scno">0</span></div>
+    <div class="cover">
+    <div class="menu">
+        <h1 class="totalscno">0</h1><h4>points</h4>
+        <button class="start">START</button>
+        <h5>+1 Harder each time you loss</h5>
+    </div>
+    <h4 class="version">version:1.4a</h4>
+</div>
+    <canvas>
+
+    </canvas>
+    
+</body>
+<script src="./index.js"></script>
+</html>
